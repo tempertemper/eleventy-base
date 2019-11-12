@@ -1,0 +1,30 @@
+{
+  "name": "eleventy-base",
+  "version": "1.0.0",
+  "description": "This is the starting point for Eleventy projects",
+  "scripts": {
+    "clear": "rm -rf dist",
+    "scss": "node-sass --output-style compressed --source-map true -o dist/assets/css src/scss/style.scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
+    "styles": "npm run clear && npm run scss && npm run autoprefixer",
+    "serve": "npm run clear && npx @11ty/eleventy --serve",
+    "build": "npm run clear && npx @11ty/eleventy",
+    "staging": "npm run build && echo 'User-agent: *\nDisallow: /' > dist/robots.txt",
+    "start": "npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tempertemper/eleventy-base.git"
+  },
+  "author": "Martin Underhill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tempertemper/eleventy-base/issues"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "autoprefixer": "^9.7.1",
+    "node-sass": "^4.13.0",
+    "postcss-cli": "^6.1.3"
+  }
+}

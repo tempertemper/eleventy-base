@@ -1,0 +1,15 @@
+{
+  "title": "eleventy-base",
+  "company": "Example Limited",
+  "version": "1.0.0",
+  "url": "https://example.com",
+  "baseurl": "",
+  "repo": "https://github.com/tempertemper/eleventy-base/issues",
+  "comments": false,
+  "author": {
+    "name": "Example name",
+    "twitter": "@example",
+    "email": "hello+website@example.com"
+  },
+  "og_locale": "en_GB"
+}

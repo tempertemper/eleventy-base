@@ -1,0 +1,22 @@
+# Build commands
+
+# Production build command
+[build]
+  command = "npm run build"
+
+# Non-production build command
+[context.deploy-preview]
+  command = "npm run staging"
+
+[context.branch-deploy]
+  command = "npm run staging"
+
+
+# Redirects
+
+# Redirect default Netlify subdomain to primary domain
+[[redirects]]
+  from = "https://example.netlify.com/*"
+  to = "https://example.com/:splat"
+  status = 301
+  force = true
