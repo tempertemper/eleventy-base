@@ -8,9 +8,6 @@ module.exports = function(eleventyConfig) {
         extensions: ["html"]
       }
     }
-    // serveStaticOptions: {
-    //   extensions: ['html']
-    // }
   });
   return {
     templateFormats : ["njk", "html", "md", "txt"],
