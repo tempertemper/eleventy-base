@@ -1,0 +1,130 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+pre,
+code {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+img,
+address,
+pre,
+.map {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+pre,
+body,
+html,
+fieldset,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+address,
+cite {
+  font-style: normal;
+}
+
+:focus {
+  outline: none;
+}
+
+a img,
+img,
+iframe,
+fieldset {
+  border: 0;
+}
+
+legend {
+  color: inherit;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 1px;
+}
+
+select {
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+[type="submit"] {
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+[type="search"] {
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+
+[type="text"],
+[type="email"],
+[type="tel"],
+[type="url"],
+textarea {
+  -webkit-appearance: none;
+}
+
+::-webkit-search-decoration,
+::-webkit-search-cancel-button {
+  display: none;
+}
+
+button {
+  background-image: none;
+}
+
+nav .selected {
+  cursor: default;
+}
+
+textarea {
+  overflow-y: auto;
+  resize: vertical;
+}
+
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}

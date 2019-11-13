@@ -4,13 +4,20 @@
   "description": "This is the starting point for Eleventy projects",
   "scripts": {
     "clear": "rm -rf dist",
-    "scss": "node-sass --output-style compressed --source-map true -o dist/assets/css src/scss/style.scss",
-    "autoprefixer": "postcss -u autoprefixer -r dist/css/*",
-    "styles": "npm run clear && npm run scss && npm run autoprefixer",
-    "serve": "npm run clear && npx @11ty/eleventy --serve",
-    "build": "npm run clear && npx @11ty/eleventy",
+    "scssDev": "node-sass --output-style compressed --source-map true -o dist/assets/css src/scss/style.scss",
+    "scssProd": "node-sass --output-style compressed -o dist/assets/css src/scss/style.scss",
+    "autoprefixer": "postcss -u autoprefixer -r dist/assets/css/*.css",
+    "stylesDev": "npm run scssDev && npm run autoprefixer",
+    "stylesProd": "npm run scssProd && npm run autoprefixer",
+    "assetsDev": "npm run stylesDev",
+    "assetsProd": "npm run stylesProd",
+    "serve": "npm run clear && npm run assetsDev && npx @11ty/eleventy --serve --quiet",
+    "build": "npm run clear && npm run assetsProd && npx @11ty/eleventy",
     "staging": "npm run build && echo 'User-agent: *\nDisallow: /' > dist/robots.txt",
-    "start": "npm run serve"
+    "start": "npm run serve",
+    "bump:major": "bump major --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json",
+    "bump:minor": "bump minor --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json",
+    "bump:patch": "bump patch --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json"
   },
   "repository": {
     "type": "git",
@@ -25,6 +32,7 @@
     "@11ty/eleventy": "^0.9.0",
     "autoprefixer": "^9.7.1",
     "node-sass": "^4.13.0",
-    "postcss-cli": "^6.1.3"
+    "postcss-cli": "^6.1.3",
+    "version-bump-prompt": "^5.0.6"
   }
 }

@@ -7,7 +7,9 @@ module.exports = function(eleventyConfig) {
       serveStaticOptions: {
         extensions: ["html"]
       }
-    }
+    },
+    open: false,
+    notify: false
   });
   return {
     templateFormats : ["njk", "html", "md", "txt"],
