@@ -38,7 +38,7 @@ Do this with caution.
 
 ## Getting started
 
-This repo is full of references to `example.com`. The first thing to do is to replace this with your own site's URL.
+This repo is full of references to `example.com`. The first thing to do is to replace this with your own site's URL. You'll probably want to change all the references to this template repo (e.g. in your package.json file) to your own too.
 
 The root folder of this repo contains all the config files you need. The stuff you'll be editing more regularly is all in the `/src/` directory.
 
