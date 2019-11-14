@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     port: 3000,
-    open: true,
+    watch: true,
     server: {
       baseDir: "./dist/",
       serveStaticOptions: {
