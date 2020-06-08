@@ -1,2 +1,6 @@
 @import 'reset';
 
+::selection {
+  background: white;
+  color: black;
+}
