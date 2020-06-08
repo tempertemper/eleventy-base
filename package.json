@@ -4,6 +4,11 @@
   "description": "This is the starting point for Eleventy projects",
   "scripts": {
     "clear:all": "rm -rf dist",
+    "clear:images": "rm -rf dist/assets/img",
+    "copy:images": "mkdir -p dist/assets/img/ && cp -a src/img/. dist/assets/img/",
+    "build:images": "npm run clear:images && npm run copy:images",
+    "watch:images": "onchange 'src/img/**/*' -- npm run build:images",
+    "serve:images": "npm run build:images && npm run watch:images",
     "clear:styles": "rm -rf dist/assets/css",
     "build:scssDev": "node-sass --output-style compressed --source-map true -o dist/assets/css src/scss/style.scss",
     "build:scssProd": "node-sass --output-style compressed -o dist/assets/css src/scss/style.scss",
@@ -16,7 +21,7 @@
     "serve:site": "npm run clear:all && npx @11ty/eleventy --serve --quiet",
     "build": "npm run clear:all && npm run build:assetsProd && npx @11ty/eleventy",
     "staging": "npm run build && echo 'User-agent: *\nDisallow: /' > dist/robots.txt",
-    "start": "parallelshell 'npm run serve:site' 'npm run serve:styles'",
+    "start": "parallelshell 'npm run serve:site' 'npm run serve:images' 'npm run serve:styles'",
     "bump:major": "bump major --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json",
     "bump:minor": "bump minor --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json",
     "bump:patch": "bump patch --commit 'Bumps version number to %s' --tag '%s' src/site/_data/site.json *.json"
