@@ -36,12 +36,12 @@
     "url": "https://github.com/tempertemper/eleventy-base/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
-    "autoprefixer": "^9.7.1",
-    "node-sass": "^4.13.0",
-    "onchange": "^6.1.0",
-    "parallelshell": "3.0.1",
-    "postcss-cli": "^6.1.3",
-    "version-bump-prompt": "^5.0.6"
+    "@11ty/eleventy": "^0.11.0",
+    "autoprefixer": "^9.8.0",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "3.0.2",
+    "postcss-cli": "^7.1.1",
+    "version-bump-prompt": "^6.0.3"
   }
 }
