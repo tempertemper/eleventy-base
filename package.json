@@ -4,8 +4,8 @@
   "description": "This is the starting point for Eleventy projects",
   "scripts": {
     "clear": "rm -rf dist",
-    "img": "mkdir -p dist/assets/img/ && cp -a src/img/. dist/assets/img/",
-    "js": "mkdir -p dist/assets/js/ && cp -a src/js/. dist/assets/js/",
+    "img": "mkdir -p src/img/ && mkdir -p dist/assets/img/ && cp -a src/img/. dist/assets/img/",
+    "js": "mkdir -p src/js/ && mkdir -p dist/assets/js/ && cp -a src/js/. dist/assets/js/",
     "sass": "sass src/scss/style.scss --style=compressed dist/assets/css/style.css",
     "autoprefixer": "postcss -u autoprefixer -r dist/assets/css/*.css",
     "build:assets": "npm run img && npm run js && npm run sass && npm run autoprefixer",
