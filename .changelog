@@ -13,3 +13,20 @@ All notable changes to this project will be documented in this file. The format 
 
 ----------
 
+
+## [1.0.2] - 2021-08-31
+
+### Changes
+- Updates to use node version 16
+
+
+## [1.0.1] - 2021-08-31
+
+### Fixes
+- Updates npm packages to fix vulnerabilities
+
+
+## [1.0.0] - 2021-03-29
+
+### Adds
+- Initial Eleventy base setup
