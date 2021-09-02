@@ -4,5 +4,11 @@
     <body>
         <h1>{{ title }}</h1>
         {{ content | safe }}
+        <style>
+          @media screen and (prefers-color-scheme: dark) {
+            :where(a:link) {color: #9e9eff;}
+            :where(a:visited) {color: #d0adf0;}
+          }
+        </style>
     </body>
 </html>
