@@ -18,7 +18,7 @@ All notable changes to this project will be documented in this file. The format 
 
 ### Changes
 - Updates eleventy to 1.0.1 along with some other minor package bumps
-
+- Updates node version to 16.16.0
 
 ## [1.0.3] - 2021-09-02
 
