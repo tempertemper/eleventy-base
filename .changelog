@@ -14,6 +14,15 @@ All notable changes to this project will be documented in this file. The format 
 ----------
 
 
+## [1.0.6] - 2023-01-25
+
+### Changes
+- Updates to node 19.0.5
+- Updates eleventy to version 1.0.2
+- Updates autoprefixer to version 10.4.13
+- Updates postcss-cli to version 10.1.0
+
+
 ## [1.0.5] - 2022-07-26
 
 ### Changes
