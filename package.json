@@ -4,19 +4,10 @@
   "description": "This is the starting point for Eleventy projects",
   "scripts": {
     "clear": "rm -rf dist",
-    "img": "mkdir -p src/img/ && mkdir -p dist/assets/img/ && cp -a src/img/. dist/assets/img/",
-    "js": "mkdir -p src/js/ && mkdir -p dist/assets/js/ && cp -a src/js/. dist/assets/js/",
-    "sass": "sass src/scss/style.scss --style=compressed dist/assets/css/style.css",
-    "autoprefixer": "postcss -u autoprefixer -r dist/assets/css/*.css",
-    "build:assets": "npm run img && npm run js && npm run sass && npm run autoprefixer",
     "build:eleventy": "npx @11ty/eleventy",
-    "build": "npm run clear && npm run build:assets && npm run build:eleventy",
+    "build": "npm run clear && npm run build:eleventy",
     "serve": "npx @11ty/eleventy --serve --quiet",
-    "watch:css": "onchange 'src/scss' -- npm run sass && npm run autoprefixer",
-    "watch:js": "onchange 'src/js' -- npm run js",
-    "watch:img": "onchange 'src/img' -- npm run img",
-    "watch:assets": "run-p watch:css watch:js watch:img",
-    "start": "npm run clear && npm run build:assets && run-p serve watch:assets",
+    "start": "npm run clear && npm run serve",
     "staging": "npm run build && echo 'User-agent: *\nDisallow: /' > dist/robots.txt",
     "bump:major": "bump major --commit 'Bumps version number to %s' src/site/_data/site.json *.json",
     "bump:minor": "bump minor --commit 'Bumps version number to %s' src/site/_data/site.json *.json",
@@ -32,12 +23,7 @@
     "url": "https://github.com/tempertemper/eleventy-base/issues"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.2",
-    "autoprefixer": "^10.4.13",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0",
-    "postcss-cli": "^10.1.0",
-    "sass": "^1.57.1",
+    "@11ty/eleventy": "^2.0.1",
     "version-bump-prompt": "^6.1.0"
   }
 }
