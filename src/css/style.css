@@ -1,3 +1,5 @@
+/* Reset styles */
+
 html {
   box-sizing: border-box;
 }
@@ -44,10 +46,6 @@ input {
 address,
 cite {
   font-style: normal;
-}
-
-:focus {
-  outline: none;
 }
 
 a img,
@@ -106,10 +104,6 @@ button {
   background-image: none;
 }
 
-nav .selected {
-  cursor: default;
-}
-
 textarea {
   overflow-y: auto;
   resize: vertical;
@@ -119,12 +113,21 @@ img,
 svg {
   height: auto;
   max-width: 100%;
-}
-
-iframe {
   max-width: 100%;
 }
 
 ::-moz-focus-inner {
   border: 0;
+}
+
+/* Base styles */
+
+::selection {
+  background: white;
+  color: black;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 125%;
 }

@@ -13,6 +13,13 @@ All notable changes to this project will be documented in this file. The format 
 
 ----------
 
+## [1.1.0] - 2023-06-03
+
+### Changes
+- Upgrades to Eleventy 2.0.1
+- Uses CSS instead of SCSS
+
+
 ## [1.0.7] - 2023-01-25
 
 ### Adds
