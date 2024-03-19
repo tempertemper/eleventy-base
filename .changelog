@@ -13,6 +13,13 @@ All notable changes to this project will be documented in this file. The format 
 
 ----------
 
+
+## [1.1.1] - 2024-03-19
+
+### Changes
+- Updates node version to 20.11.1
+
+
 ## [1.1.0] - 2023-06-03
 
 ### Changes
