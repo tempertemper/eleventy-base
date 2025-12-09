@@ -20,3 +20,23 @@
   to = "https://example.com/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "https://example.netlify.app/*"
+  to = "https://www.example.com/:splat"
+  status = 301
+  force = true
+
+# Ensure HTTP apex → HTTPS www
+[[redirects]]
+  from = "http://example.com/*"
+  to   = "https://www.example.com/:splat"
+  status = 301
+  force = true
+
+# Ensure HTTP www → HTTPS www
+[[redirects]]
+  from = "http://www.example.com/*"
+  to   = "https://www.example.com/:splat"
+  status = 301
+  force = true
