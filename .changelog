@@ -11,14 +11,20 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+----------
+
+
+## [1.3.0] - 2025-12-09
+
+### Changes
 - Updates to ES Module syntax
-- Removes version-bump-prompt package
+- Removes version-bump-prompt package in favour of built-in npm scripts
 - Updates GitHub workflow to auto-tag on merge to main branch
-- Removes unused .browserslistrc file
 - Ensures non-HTTP domains redirect to HTTPS
 - Some extra base page layout styling
 
-----------
+### Removes
+- Removes unused .browserslistrc file
 
 
 ## [1.2.1] - 2025-08-09
