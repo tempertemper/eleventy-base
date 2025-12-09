@@ -11,6 +11,13 @@ All notable changes to this project will be documented in this file. The format 
 
 ## [Unreleased]
 
+- Updates to ES Module syntax
+- Removes version-bump-prompt package
+- Updates GitHub workflow to auto-tag on merge to main branch
+- Removes unused .browserslistrc file
+- Ensures non-HTTP domains redirect to HTTPS
+- Some extra base page layout styling
+
 ----------
 
 

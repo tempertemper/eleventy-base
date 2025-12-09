@@ -1,13 +1,13 @@
-module.exports = function(eleventyConfig) {
+export default function(config) {
 
   // Generate assets
-  eleventyConfig.addPassthroughCopy({ "src/img": "assets/img" });
-  eleventyConfig.addPassthroughCopy({ "src/css": "assets/css" });
+  config.addPassthroughCopy({ "src/img": "assets/img" })
+  config.addPassthroughCopy({ "src/css": "assets/css" })
 
   // Localhost server config
-  eleventyConfig.setServerOptions({
-    port: 3000,
-  });
+  config.setServerOptions({
+    port: 3000
+  })
 
   return {
     dir: {
@@ -16,7 +16,7 @@ module.exports = function(eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts"
     },
-    htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk"
-  };
-};
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: "njk"
+  }
+}
